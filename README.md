@@ -13,5 +13,7 @@ $ docker run -d --name inspectIT-CMR -p 8182:8182 -p 9070:9070 inspectit/cmr
 Now you can start a container with the following command:
 
 ```bash
-$ docker run -d --link inspectIT-CMR:cmr -v $(pwd)/config:/opt/agent/active-config inspectit/dvdstore
+$ sudo docker run -d -p 8080:8080 --link inspectIT-CMR:cmr -v $(pwd)/config:/opt/agent/active-config inspectit/dvdstore
 ```
+
+After this, check if the application is available via a browser (http://127.0.0.1:8080/dvdstore)
