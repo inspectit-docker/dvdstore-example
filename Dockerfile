@@ -17,5 +17,7 @@ COPY run-with-inspectit.sh /run-with-inspectit.sh
 #define VOLUME for active agent config
 VOLUME ["/opt/agent/active-config"]
 
+EXPOSE 8080
+
 # define default command
 CMD ["/run-with-inspectit.sh"]
