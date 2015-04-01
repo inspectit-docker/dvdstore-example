@@ -17,4 +17,4 @@ else
 	echo "Done. Remember to modify the configuration for your needs. You find the configuration in the mapped volume $INSPECTIT_CONFIG_HOME." 
 fi
 
-exec jetty.sh run
+exec /run.sh
