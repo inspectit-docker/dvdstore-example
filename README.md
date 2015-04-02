@@ -17,3 +17,5 @@ $ sudo docker run -d -p 8080:8080 --link inspectIT-CMR:cmr -v $(pwd)/config:/opt
 ```
 
 After this, check if the application is available via a browser (http://127.0.0.1:8080/dvdstore)
+
+## Connect with inspectIT UI (Client)
