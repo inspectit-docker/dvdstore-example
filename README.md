@@ -21,6 +21,6 @@ After this, check if you can connect to the application via a browser (http://12
 ## Connect with inspectIT UI (Client)
 Download the inspectIT Client from [www.inspectit.eu](http://www.inspectit.eu)
 The client will start with a pre defined "Local CMR" - IP: 127.0.0.1:8182
-Now you should the see a registered Loacl CMR and a connected Agent. The name of the Agent is equals with the container-id in docker.
+Now you should the see a registered Loacl CMR and a connected agent. The name of the agent is equals with the container-id in docker.
 
 ![inspectIT Client](https://github.com/inspectIT/inspectIT-dvdstore-example/blob/master/inspectIT.png)
