@@ -17,8 +17,8 @@ RUN wget ftp://ntftp.novatec-gmbh.de/inspectit/samples/sample-dvdstore/${PROJECT
 && mv dvdstore22.trace.db /database/database/ \
 && mv dvdstore.ear /jboss-5.1.0.GA/server/default/deploy/ \
 && mv dvdstore-prod-ds.xml /jboss-5.1.0.GA/server/default/deploy/dvdstore-ds.xml \
-&& rm -f /opt/agent/config/inspectit-agent.cfg \
 && mv inspectit-agent.cfg /opt/agent/config \
+&& mv dvdstore-*.cfg /opt/agent/config/common \
 && rm -f ${PROJECT_NAME}.zip
 
 #copy start script
