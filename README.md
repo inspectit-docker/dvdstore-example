@@ -13,7 +13,7 @@ $ docker run -d --name inspectIT-CMR -p 8182:8182 -p 9070:9070 inspectit/cmr
 Now you can start a container with the following command:
 
 ```bash
-$ docker run -d -p 8080:8080 --link inspectIT-CMR:cmr inspectit/dvdstore
+$ docker run -d --name inspectIT-dvdstore -p 8080:8080 --link inspectIT-CMR:cmr inspectit/dvdstore
 ```
 
 After this, check if you can connect to the application via a browser (http://127.0.0.1:8080/dvdstore)
