@@ -20,11 +20,3 @@ RUN wget ftp://ntftp.novatec-gmbh.de/inspectit/samples/sample-dvdstore/${PROJECT
 && mv inspectit-agent.cfg /opt/agent/config \
 && mv dvdstore-*.cfg /opt/agent/config/common \
 && rm -f ${PROJECT_NAME}.zip
-
-#copy start script
-COPY run-with-inspectit.sh /run-with-inspectit.sh
-
-EXPOSE 8080
-
-# define default command
-CMD ["/run-with-inspectit.sh"]
