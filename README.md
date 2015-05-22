@@ -4,6 +4,8 @@ DVDStore example with inspectIT based on docker
 This docker image is based on the official JBoss docker image including the inspectIT agent of the open source APM solution [www.inspectit.eu](http://www.inspectit.eu). As an example, the pre configured DVDStore Application is deployed.
 
 ## Quickstart
+If you have [Docker Compose](https://docs.docker.com/compose/) installed on your linux system, just use our [docker-compose.yml](https://raw.githubusercontent.com/inspectIT/docker-inspectIT-dvdstore-example/master/docker-compose.yml) to start the whole stack. Otherwise follow these steps:
+
 First you need a running inspectIT CMR. You can use our [docker image](https://github.com/inspectIT/docker-CMR):
 
 ```bash
