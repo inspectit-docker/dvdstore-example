@@ -1,3 +1,5 @@
+[![](https://badge.imagelayers.io/inspectit/dvdstore:latest.svg)](https://imagelayers.io/?images=inspectit/dvdstore:latest 'Get your own badge on imagelayers.io')
+
 # inspectIT-dvdstore-example
 DVDStore example with inspectIT based on docker
 
