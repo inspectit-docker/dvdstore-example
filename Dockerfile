@@ -1,11 +1,12 @@
-FROM inspectit/jboss:5
+FROM inspectit/jboss:5-1.6.7.79
 MAINTAINER info.inspectit@novatec-gmbh.de
 
 ENV PROJECT_NAME dvdstore
 
 #copy nessesary files and deplay dvdstore application
 RUN mkdir -p /database/database \
-&& mkdir -p /opt/agent/active-config
+&& mkdir -p /opt/agent/active-config \
+&& mkdir -p /opt/agent/config/common
 
 WORKDIR /opt
 
