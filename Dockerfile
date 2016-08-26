@@ -5,12 +5,11 @@ ENV PROJECT_NAME dvdstore
 
 #copy nessesary files and deplay dvdstore application
 RUN mkdir -p /database/database \
-&& mkdir -p /opt/agent/active-config \
 && mkdir -p /opt/agent/config/common
 
 WORKDIR /opt
 
-RUN wget ftp://ntftp.novatec-gmbh.de/inspectit/samples/sample-dvdstore/${PROJECT_NAME}.zip \
+RUN wget -q ftp://ntftp.novatec-gmbh.de/inspectit/samples/sample-dvdstore/${PROJECT_NAME}.zip \
 && unzip ${PROJECT_NAME}.zip \
 && mv h2.jar /database/ \
 && ln -s /database/h2.jar /jboss-5.1.0.GA/server/default/lib/. \

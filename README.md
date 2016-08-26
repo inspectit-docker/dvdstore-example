@@ -11,7 +11,7 @@ If you have [Docker Compose](https://docs.docker.com/compose/) installed on your
 First you need a running inspectIT CMR. You can use our [docker image](https://github.com/inspectIT/docker-CMR):
 
 ```bash
-$ docker run -d --name inspectIT-CMR -p 8182:8182 -p 9070:9070 inspectit/cmr
+$ docker run -d --name inspectIT-CMR -p 8182:8182 -p 9070:9070 inspectit/cmr:1.6.9.83
 ```
 
 Now you can start a container with the following command:
@@ -25,6 +25,6 @@ After this, check if you can connect to the application via a browser (http://12
 ## Connect with inspectIT UI (Client)
 Download the inspectIT Client from [www.inspectit.rocks](http://www.inspectit.rocks)
 The client will start with a pre defined "Local CMR" - IP: 127.0.0.1:8182
-Now you should the see a registered Loacl CMR and a connected agent. The name of the agent is equals with the container-id in docker.
+Now you should the see a registered Local CMR and a connected agent. The name of the agent is equal to the container-id in docker.
 
 ![inspectIT Client](https://github.com/inspectIT/inspectIT-dvdstore-example/blob/master/inspectIT.png)

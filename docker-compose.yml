@@ -1,5 +1,5 @@
 cmr:
-  image: inspectit/cmr
+  image: inspectit/cmr:1.6.7.79
   ports:
    - "8182:8182"
 dvdstore:
@@ -11,7 +11,7 @@ dvdstore:
   environment:
    - AGENT_NAME=dvdstore
 gui:
-  image: inspectit/inspectit
+  image: inspectit/inspectit:1.6.7.79
   environment:
    - DISPLAY
    - XAUTHORITY=/.Xauth
