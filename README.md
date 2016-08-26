@@ -11,7 +11,7 @@ If you have [Docker Compose](https://docs.docker.com/compose/) installed on your
 First you need a running inspectIT CMR. You can use our [docker image](https://github.com/inspectIT/docker-CMR):
 
 ```bash
-$ docker run -d --name inspectIT-CMR -p 8182:8182 -p 9070:9070 inspectit/cmr:1.6.9.83
+$ docker run -d --name inspectIT-CMR -p 8182:8182 -p 9070:9070 inspectit/cmr:1.6.7.79
 ```
 
 Now you can start a container with the following command:
