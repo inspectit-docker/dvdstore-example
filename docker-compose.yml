@@ -1,5 +1,5 @@
 cmr:
-  image: inspectit/cmr:1.6.7.79
+  image: inspectit/cmr:1.7.4.87
   ports:
    - "8182:8182"
 dvdstore:

@@ -1,4 +1,4 @@
-FROM inspectit/jboss:5-1.6.7.79
+FROM inspectit/jboss:5
 MAINTAINER info.inspectit@novatec-gmbh.de
 
 ENV PROJECT_NAME dvdstore
