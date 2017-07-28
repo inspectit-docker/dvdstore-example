@@ -20,3 +20,7 @@ RUN wget -q ftp://ntftp.novatec-gmbh.de/inspectit/samples/sample-dvdstore/${PROJ
 && mv inspectit-agent.cfg /opt/agent/config \
 && mv dvdstore-*.cfg /opt/agent/config/common \
 && rm -f ${PROJECT_NAME}.zip
+
+RUN apt-get update && apt-get install -y realpath
+RUN wget --no-check-certificate -O /wait-for-it.sh https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh \
+&& chmod +x /wait-for-it.sh
